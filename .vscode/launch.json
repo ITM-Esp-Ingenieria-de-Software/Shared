@@ -1,0 +1,57 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C#: ApiGateway Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/ApiGateway/Infrastructure/ApiGateway.Infrastructure.csproj",
+    },
+    {
+      "name": "C#: AccessControl Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/AccessControl/Infrastructure/AccessControl.Infrastructure.csproj",
+    },
+    {
+      "name": "C#: Analytics Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/Analytics/Infrastructure/Analytics.Infrastructure.csproj",
+    },
+    {
+      "name": "C#: Profiles Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/Profiles/Infrastructure/Profiles.Infrastructure.csproj",
+    },
+    {
+      "name": "C#: QueryBank Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/QueryBank/Infrastructure/QueryBank.Infrastructure.csproj",
+    },
+    {
+      "name": "C#: QueryBank.EventConsumer Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Backend/QueryBank/EventConsumer/QueryBank.EventConsumer.csproj",
+    },
+  ],
+  "compounds": [
+    {
+      "name": "Debug All",
+      "configurations": [
+        "C#: ApiGateway Debug",
+        "C#: AccessControl Debug",
+        "C#: Analytics Debug",
+        "C#: Profiles Debug",
+        "C#: QueryBank Debug",
+        "C#: QueryBank.EventConsumer Debug",
+      ]
+    }
+  ]
+}
